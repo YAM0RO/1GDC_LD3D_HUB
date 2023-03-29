@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5e62f47f2988a144f9dfebe524de271e
+timeCreated: 1504100397
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Blood Crow Shadow Condensed Italic
+  fontNames:
+  - Blood Crow Shadow Condensed Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5b56fba4844f31a42915cbbd5738b5cc
+timeCreated: 1504100397
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Blood Crow Condensed
+  fontNames:
+  - Blood Crow Condensed
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

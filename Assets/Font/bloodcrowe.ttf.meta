@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a5b21b9bc3c875d4795e7a549e0eb530
+timeCreated: 1504100397
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Blood Crow Expanded
+  fontNames:
+  - Blood Crow Expanded
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

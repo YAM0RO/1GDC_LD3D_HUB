@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 205363393bfbce140aff46c2a6d2027c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Rain Tungsten
+  fontNames:
+  - Rain Tungsten
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3fadba2b5a0c98c42b5329732c851af3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
