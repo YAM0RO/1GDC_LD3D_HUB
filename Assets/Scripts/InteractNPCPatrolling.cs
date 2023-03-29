@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractNPC : MonoBehaviour
+public class InteractNPCPatrolling : MonoBehaviour
 {
     public GameObject PanelInteract;
     public GameObject DialogBox;
-    public GameObject DialogBox2;
     public GameObject Player;
     public GameObject CameraNPC;
     private AudioSource _audio;
@@ -14,12 +13,11 @@ public class InteractNPC : MonoBehaviour
     public DebugMouse _mouseMNGR;
     private bool isPanelActive = false;
 
-    private bool AcceptTask = false;
+    public PatrolSystem _patrolScript;
 
     void Start()
     {
         isPanelActive = false;
-        AcceptTask = false;
     }
 
     // Update is called once per frame
@@ -27,31 +25,12 @@ public class InteractNPC : MonoBehaviour
     {
         if(isPanelActive)
         {
-            if(Input.GetKey(KeyCode.E) && !AcceptTask)
+            if(Input.GetKey(KeyCode.E))
             {
-                StartCoroutine(DebugUpdate());
+                _patrolScript.IsPatrolling = false;
                 DialogBox.SetActive(true);
                 CameraNPC.SetActive(true);
-                _mouseMNGR.LockMouse = false;
-                Player.SetActive(false);
-                int index = Random.Range(0, NPCSounds.Length);
-                _audio.clip = NPCSounds[index];
-                _audio.Play();
-                Cursor.lockState = CursorLockMode.None;
-            }
-        }
-        else
-        {
-            PanelInteract.SetActive(false);
-        }
-
-        if (isPanelActive)
-        {
-            if (Input.GetKey(KeyCode.E) && AcceptTask)
-            {
                 StartCoroutine(DebugUpdate());
-                DialogBox2.SetActive(true);
-                CameraNPC.SetActive(true);
                 _mouseMNGR.LockMouse = false;
                 Player.SetActive(false);
                 int index = Random.Range(0, NPCSounds.Length);
@@ -90,7 +69,6 @@ public class InteractNPC : MonoBehaviour
         CameraNPC.SetActive(false);
         _mouseMNGR.LockMouse = true;
         Player.SetActive(true);
-        AcceptTask = true;
     }
 
     public void MouseDebug()
@@ -98,9 +76,11 @@ public class InteractNPC : MonoBehaviour
         _mouseMNGR.LockMouse = true;
         Cursor.lockState = CursorLockMode.Locked;
     }
+
     IEnumerator DebugUpdate()
     {
         yield return new WaitForSeconds(0.001f);
         PanelInteract.SetActive(false);
     }
+
 }

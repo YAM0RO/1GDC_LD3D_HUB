@@ -13,10 +13,15 @@ public class PatrolSystem : MonoBehaviour
 
     private bool ReachedPointA = true;
     private bool ReachedPointB = false;
+
+    public bool IsPatrolling = true;
+
     void Start()
     {
         ReachedPointA = true;
         ReachedPointB = false;
+
+        IsPatrolling = true;
 
         _nav = GetComponent<NavMeshAgent>();
         _anim = GetComponent<Animator>();
@@ -25,13 +30,22 @@ public class PatrolSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(ReachedPointA && !ReachedPointB)
+        if (IsPatrolling)
         {
-            _nav.SetDestination(PatrolB.position);
+            _nav.isStopped = false;
+            if (ReachedPointA && !ReachedPointB)
+            {
+                _nav.SetDestination(PatrolB.position);
+            }
+            if (!ReachedPointA && ReachedPointB)
+            {
+                _nav.SetDestination(PatrolA.position);
+            }
         }
-        if(!ReachedPointA && ReachedPointB)
+        else if(!IsPatrolling)
         {
-            _nav.SetDestination(PatrolA.position);
+            _anim.SetBool("Walking", true);
+            _nav.isStopped = true;
         }
     }
 
@@ -45,5 +59,11 @@ public class PatrolSystem : MonoBehaviour
     {
         ReachedPointA = false;
         ReachedPointB = true;
+    }
+
+    public void RestorePatrol()
+    {
+        _anim.SetBool("Walking", false);
+        IsPatrolling = true;
     }
 }
