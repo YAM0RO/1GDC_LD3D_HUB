@@ -13800,7 +13800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f0dcfba1f173b6842999ad646e254c51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.9744
+      value: 9.23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f0dcfba1f173b6842999ad646e254c51, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21213,6 +21213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PatrolA: {fileID: 243059889}
   PatrolB: {fileID: 2007630909}
+  IsPatrolling: 1
 --- !u!65 &1034428383
 BoxCollider:
   m_ObjectHideFlags: 0
