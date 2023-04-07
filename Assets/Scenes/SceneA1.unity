@@ -389,7 +389,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e76bfd148b32b541a54435a657f327b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToDisable: {fileID: 52020258}
 --- !u!1 &52078886
 GameObject:
   m_ObjectHideFlags: 0
@@ -4913,7 +4912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 44.136, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -547.6433, y: -322.138}
+  m_AnchoredPosition: {x: -547.6433, y: -319.97}
   m_SizeDelta: {x: 40.9561, y: 72.0639}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &579870283
@@ -9000,7 +8999,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652651757833555}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8115665, z: 1}
@@ -9020,28 +9019,6 @@ MonoBehaviour:
   PatrolA: {fileID: 972658712}
   PatrolB: {fileID: 1014775319}
   IsPatrolling: 1
---- !u!195 &1200388161
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652651757833555}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!54 &1200388164
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9664,17 +9641,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1467444830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbed1b4c3acea744294123eb7807ed4e, type: 3}
+  m_Script: {fileID: 11500000, guid: a95aeff3d23d0fb4bace1ef0ad96b873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PanelInteract: {fileID: 564988267}
-  DialogBox: {fileID: 1017436787}
-  DialogBox2: {fileID: 340618550}
-  Player: {fileID: 7397601206934542476}
-  CameraNPC: {fileID: 786356344}
-  NPCSounds:
-  - {fileID: 8300000, guid: 72f526a6a9890f643a88e85a61c86c8a, type: 3}
-  _mouseMNGR: {fileID: 1640462765}
+  PanelInteract: {fileID: 0}
+  DialogBox: {fileID: 0}
+  DialogBox2: {fileID: 0}
+  Player: {fileID: 0}
+  CameraNPC: {fileID: 0}
+  NPCSounds: []
+  _mouseMNGR: {fileID: 0}
 --- !u!114 &1467444834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15436,7 +15412,6 @@ GameObject:
   - component: {fileID: 1200388164}
   - component: {fileID: 1200388159}
   - component: {fileID: 1200388160}
-  - component: {fileID: 1200388161}
   - component: {fileID: 95888707043749298}
   - component: {fileID: 95888707043749299}
   - component: {fileID: 95888707043749301}
@@ -16597,7 +16572,7 @@ Animator:
   m_GameObject: {fileID: 1652651757833555}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a50cd06a0668d1a418d586a2944e3ed5, type: 3}
-  m_Controller: {fileID: 9100000, guid: c72846d0e88a3874281adf200f462762, type: 2}
+  m_Controller: {fileID: 9100000, guid: dd89bdb2a2f44a8428e9901e1d196438, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -16742,17 +16717,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1652651757833555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbed1b4c3acea744294123eb7807ed4e, type: 3}
+  m_Script: {fileID: 11500000, guid: a95aeff3d23d0fb4bace1ef0ad96b873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PanelInteract: {fileID: 1953777135}
-  DialogBox: {fileID: 1023839168}
-  DialogBox2: {fileID: 1934307321}
-  Player: {fileID: 7397601206934542476}
-  CameraNPC: {fileID: 2100945408}
-  NPCSounds:
-  - {fileID: 8300000, guid: 72f526a6a9890f643a88e85a61c86c8a, type: 3}
-  _mouseMNGR: {fileID: 1640462765}
+  PanelInteract: {fileID: 0}
+  DialogBox: {fileID: 0}
+  DialogBox2: {fileID: 0}
+  Player: {fileID: 0}
+  CameraNPC: {fileID: 0}
+  NPCSounds: []
+  _mouseMNGR: {fileID: 0}
 --- !u!137 &137649436794365119
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
